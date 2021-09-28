@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageTwo.textContent = ''
             } else {
                 messageOne.textContent = data.location
-                messageTwo.textContent = data.forcast
+                messageTwo.textContent = `The tempature is ${data.forcast.degreess} degreess and it feels like ${data.forcast.feelsLike}`
             }
         })
     })
